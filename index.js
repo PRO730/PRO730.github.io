@@ -26,8 +26,8 @@ function showLanguagespage() {
   document.getElementById("Languages").style.display = "block";
 }
 
-showHomepage();
-// showSkillspage();
+// showHomepage();
+showSkillspage();
 
 var homelink = document.querySelectorAll("#top-menu-bar a")[0];
 homelink.addEventListener("click", showHomepage);
