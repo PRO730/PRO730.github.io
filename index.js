@@ -1,3 +1,5 @@
+var activepage = "Home";
+
 function hide(id) {
   document.getElementById(id).style.display = "none";
 }
@@ -7,31 +9,27 @@ function show(id) {
 }
 
 function showHomepage() {
-  hide("Skills");
-  hide("Projects");
-  hide("Languages");
+  hide(activepage);
   show("Home");
+  activepage = "Home";
 }
 
 function showSkillspage() {
-  hide("Home");
-  hide("Projects");
-  hide("Languages");
+  hide(activepage);
   show("Skills");
+  activepage = "Skills";
 }
 
 function showProjectpage() {
-  hide("Home");
-  hide("Skills");
-  hide("Languages");
+  hide(activepage);
   show("Projects");
+  activepage = "Projects";
 }
 
 function showLanguagespage() {
-  hide("Home");
-  hide("Skills");
-  hide("Projects");
+  hide(activepage);
   show("Languages");
+  activepage = "Languages";
 }
 
 // showHomepage();
